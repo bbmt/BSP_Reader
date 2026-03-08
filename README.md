@@ -5,6 +5,12 @@ The reader depends on the olefile package for extracting the binary stream insid
 
 Moreover, inside the binary stream the data seems to be packaged as TLV, Type-Lenght-Value, this is useful to check if data extraction is correct. This pattern does not to fit all the stream, sometime there are variants. 
 
+## For Users
+
+Please use the links bellow:
+- [FPA - To extract image from FPA files](FPA_ReaderBSP.ipynb)
+
+
 ### Updates
 2026.03.08 - Refactored the code for PointSpectraReader. User had problems extracting data.
 
