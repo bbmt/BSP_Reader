@@ -5,10 +5,13 @@ The reader depends on the olefile package for extracting the binary stream insid
 
 Moreover, inside the binary stream the data seems to be packaged as TLV, Type-Lenght-Value, this is useful to check if data extraction is correct. This pattern does not to fit all the stream, sometime there are variants. 
 
-## For Users
+# For Users
 
-Please use the links bellow:
-- [FPA - To extract image from FPA files](FPA_ReaderBSP.ipynb)
+Please use the links bellow. It will redirect to Google Colab. Please follow the instruction there.
+
+- [FPA - To extract image from FPA files](https://colab.research.google.com/github/bbmt/BSP_Reader/blob/main/FPA_ReaderBSP.ipynb)
+
+- [Point Spectra - To extract spectra and images from BSP files](https://colab.research.google.com/github/bbmt/BSP_Reader/blob/main/New_Refactor_PointSpectra_ReaderBSP.ipynb)
 
 
 ### Updates
