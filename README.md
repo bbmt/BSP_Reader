@@ -1,7 +1,7 @@
 # A Reader for Agilent BSP files
 
-The BSP files of Agilent IR spectrometer is a OLE2 Microsoft format.
-The reader depends on the olefile package for extracting the binary stream inside the location [SPECTRA, ID], where ID is a alphanumeric string given for each spectra by the Agilent Resolution software.
+The BSP files of Agilent IR spectrometer is a OLE2 Microsoft format archive.
+This reader depends on the olefile package for extracting the binary stream inside the location [SPECTRA, ID], where ID is a alphanumeric string given for each spectra by the Agilent Resolution software.
 
 Moreover, inside the binary stream the data seems to be packaged as TLV, Type-Lenght-Value, this is useful to check if data extraction is correct. This pattern does not to fit all the stream, sometime there are variants. 
 
@@ -14,6 +14,9 @@ Please use the links bellow. It will redirect to Google Colab. Please follow the
 - [Point Spectra - To extract spectra and images from BSP files](https://colab.research.google.com/github/bbmt/BSP_Reader/blob/main/New_Refactor_PointSpectra_ReaderBSP.ipynb)
 
 
+### Citation
+If this code was helpful for your research, please cite: 10.5281/zenodo.23187711
+
 ### Updates
 2026.03.08 - Refactored the code for PointSpectraReader. User had problems extracting data.
 
@@ -21,3 +24,12 @@ Please use the links bellow. It will redirect to Google Colab. Please follow the
 - Pack everthing for easy install and maintenance
 - Define functions and classes instead of a script.
 - Allow multiple file processing for point spectra.
+
+### License
+BSP_Reader is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE.txt) file for details.
+
+This software includes third-party code from 'olefile':
+- Copyright (c) 2005-2023 Philippe Lagadec (BSD 2-Clause)
+- Copyright (c) 1995-2009 Fredrik Lundh / Secret Labs AB (PIL License)
+See the full license text in olefile-0.47.zip/LICENSE
+
